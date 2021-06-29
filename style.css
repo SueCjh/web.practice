@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Malgun Gothic;
+}
+:root{
+    --main-white:#f5ece5;
+    --main-black:rgb(8, 8, 8);
+}
+@font-face {
+    font-family: 'WandohopeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--main-black);
+}
+a:hover{
+    text-decoration: underline;s
+}
+#wrap{
+    width: 1320px;
+    margin: 0 auto;
+}
+.screen{
+    background-color: var(--main-white);
+    height: 745px;
+    border-bottom: 2px solid #000;
+    position: relative;
+}
+/********************************main (screen1)******************************/
+#main>.gnb{
+    position: relative;
+    height: 85px;
+}
+#main>.gnb>.search>img{
+    position: absolute;
+    right: 20px; top: 16px;
+    width: 50px;
+}
+
+#main>.gnb>.logo{
+    position: absolute;
+    left: 650px; top: 1px;
+    width: 50px;
+}
+#main>.gnb>ul{
+    display: flex;
+    position: absolute;
+    left: 175px;
+}
+#main>.gnb>ul>li{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 550;
+    margin-right: 50px;
+    line-height: 85px;
+}
+#main>.gnb>ul>li>ul{
+    display: none;
+}
+
+#main>.gnb>ul>li:hover>ul{
+    display: block;
+    position: absolute;
+}
+#main>.gnb>ul>li>ul>li{
+    background-color: rgba(0, 0, 0, 0.34);
+    line-height: 50px;
+    padding: 0 10px;
+    margin-left: -10px;
+}
+#main .imgri{
+    margin-left: 100px;
+}
+
+.container{
+    height: 660px;
+    background-image: url(images/main/main_image.jpg);
+    background-size: 1320px 660px;
+}
+.container .main_text{
+    width: 1128px; height: 100px;
+    background-color: rgba(0, 0, 0, 0.34);
+    color: var(--main-white);
+    font-family: Engravers MT;
+    font-size: 80px;
+    transform:scaleY(1.5);
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    left: 94.5px; bottom: 256px;
+}
+.container .sns{
+    position: absolute;
+    left: 35px; bottom: 23px;
+}
+.container .sns img{
+    width: 48px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+/********************************screen2*******************************/
+/********************************screen3*******************************/
+/********************************screen4*******************************/
+/********************************screen5 인스타*******************************/
+.insta>h2{
+    font-family: Engravers MT;
+    font-size: 54px;
+    transform:scaleY(1.5);
+    text-align: center;
+    line-height: 100px;
+}
+.insta>.fir_line{
+    position: absolute;
+}
+.insta>.sec_line{
+    position: absolute;
+}
+.insta img{
+    width: 260px; height: 260px;
+}
+
+
+
+/********************************screen6 피드백*******************************/
+.feed{
+    display: flex;
+}
+.feed>.pic{
+    position: absolute;
+    top: 167px; left: 143px;
+}
+.feed>.pic>.pic1,.feed>.pic>.pic2{
+    width: 268px; height: 184px;
+}
+.feed>.pic>.pic1{
+    margin-right: 20px;
+}
+.feed>.pic>.pic3{
+    width: 562px; height: 210px;
+    display: block;
+    margin-top: 20px;
+}
+.feed>.feedback{
+    border: 7px double var(--main-black);
+    width: 418px; height: 418px;
+    position: absolute;
+    top: 167px; right: 170px;
+}
+
+
+
+/********************************screen7*******************************/
+.mapinfo{
+    position: relative;
+    /* height: 745px; */
+}
+.mapinfo>.map{
+    position: absolute;
+    top: 147.5px; left: 70px;
+}
+.mapinfo>.info{
+    /*width 600 height 450*/
+    position: absolute;
+    top: 147.5px; right: 70px;
+    line-height: px;
+}
+.mapinfo>.info>h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.mapinfo>.info>dl>dt{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.mapinfo>.info>dl>dd{
+    font-size: 30px;
+    padding-left: 25px;
+    margin-top: 10px;
+}
